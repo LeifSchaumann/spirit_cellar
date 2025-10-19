@@ -11,14 +11,25 @@
         "W       W",
         "WWWWWWWWW"
     ],
-    "possessables": [
+    "objects": [
         "WWWWWWWWW",
         "W       W",
-        "W  B    W",
+        "W  B  M W",
         "W       W",
-        "W    B  W",
+        "W M  B  W",
+        "W  M    W",
+        "W  M    W",
         "W       W",
+        "WWWWWWWWW"
+    ],
+    "player": [
+        "WWWWWWWWW",
         "W       W",
+        "W  B  M W",
+        "W       W",
+        "W M  B  W",
+        "W  P    W",
+        "W  M    W",
         "W       W",
         "WWWWWWWWW"
     ]
