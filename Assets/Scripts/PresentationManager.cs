@@ -137,6 +137,7 @@ public class PresentationManager : MonoBehaviour
             {
                 FirePresenter firePresenter = Instantiate(firePrefab, GetWorldCoords(f.fire.pos), Quaternion.identity).GetComponent<FirePresenter>();
                 presenters.Add(f.fire, firePresenter);
+                GameManager.main.ScoreFire();
             } else if (events[i] is Extingish e)
             {
                 if(presenters[e.candles] is CandlesPresenter cp)

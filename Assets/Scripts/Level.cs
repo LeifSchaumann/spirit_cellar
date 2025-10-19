@@ -25,7 +25,7 @@ public class Level
         LevelData data = JsonUtility.FromJson<LevelData>(textFile.text);
         width = data.walls[0].Length;
         height = data.walls.Length;
-        wallMap = new WallType[width, height];
+        wallMap = new WallType[height, width];
         levelObjects = new List<LevelObject>();
         fireRequirement = data.fireRequirement;
 

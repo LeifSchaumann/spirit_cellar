@@ -68,7 +68,7 @@ public class InputManager : MonoBehaviour
                 {
                     if (moveActions[i].WasPressedThisFrame())
                     {
-                        if (shiftAction.IsPressed())
+                        if (!shiftAction.IsPressed())
                         {
                             _ = GameManager.main.HandleInput(new PossessInput(dirs[i]));
                         }

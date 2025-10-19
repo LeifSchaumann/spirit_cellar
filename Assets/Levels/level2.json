@@ -1,0 +1,27 @@
+﻿{
+    "fireRequirement": 3,
+    "walls": [
+        "WWWWWWW",
+        "W   W W",
+        "W   W W",
+        "W     W",
+        "W     W",
+        "WWWWWWW"
+    ],
+    "objects": [
+        "WWWWWWW",
+        "WUU WCW",
+        "W C W W",
+        "WU   UW",
+        "W U C W",
+        "WWWWWWW"
+    ],
+    "player": [
+        "WWWWWWW",
+        "WUU WCW",
+        "W C W W",
+        "WU   PW",
+        "W U C W",
+        "WWWWWWW"
+    ]
+}
