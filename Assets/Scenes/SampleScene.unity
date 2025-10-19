@@ -201,7 +201,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.11320752, g: 0.11320752, b: 0.11320752, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -517,6 +517,8 @@ MonoBehaviour:
   floorTile: {fileID: 11400000, guid: d44ef2b553e3ea049b1e6617d963906f, type: 2}
   playerPresenter: {fileID: 1498474500}
   barrelPrefab: {fileID: 4190794661759872000, guid: f50ce98d9df319f4fbdc16a9cad5b63a, type: 3}
+  candlesPrefab: {fileID: 4190794661759872000, guid: 004333fb55e511049aea4e234e8d57be, type: 3}
+  firePrefab: {fileID: 4190794661759872000, guid: 2311f4d04e3913e4bb35806bd36ae354, type: 3}
 --- !u!114 &955449569
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -26,6 +26,8 @@ public class PresentationManager : MonoBehaviour
     public Dictionary<LevelObject, ILevelObjectPresenter> presenters;
 
     public GameObject barrelPrefab;
+    public GameObject candlesPrefab;
+    public GameObject firePrefab;
 
     public Level loadedLevel;
 
@@ -69,6 +71,16 @@ public class PresentationManager : MonoBehaviour
                 }
                 barrelPresenter.barrel = b;
                 presenters.Add(b, barrelPresenter);
+            } else if (obj is Candles c)
+            {
+                CandlesPresenter candlesPresenter = Instantiate(candlesPrefab, GetWorldCoords(c.pos), Quaternion.identity).GetComponent<CandlesPresenter>();
+                
+                candlesPresenter.candles = c;
+                presenters.Add(c, candlesPresenter);
+                if (!c.isLit)
+                {
+                    candlesPresenter.Extinguish();
+                }
             }
         }
 
@@ -120,6 +132,16 @@ public class PresentationManager : MonoBehaviour
                 if (presenters[p.possessed] is IPossessablePresenter pp1)
                 {
                     pp1.Possess();
+                }
+            } else if (events[i] is FireStart f)
+            {
+                FirePresenter firePresenter = Instantiate(firePrefab, GetWorldCoords(f.fire.pos), Quaternion.identity).GetComponent<FirePresenter>();
+                presenters.Add(f.fire, firePresenter);
+            } else if (events[i] is Extingish e)
+            {
+                if(presenters[e.candles] is CandlesPresenter cp)
+                {
+                    cp.Extinguish();
                 }
             }
         }

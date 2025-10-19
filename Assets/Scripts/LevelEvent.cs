@@ -32,3 +32,21 @@ public class Possession : LevelEvent
         this.depossessed = depossessed;
     }
 }
+
+public class FireStart : LevelEvent
+{
+    public Fire fire;
+    public FireStart(Fire fire)
+    {
+        this.fire = fire;
+    }
+}
+
+public class Extingish : LevelEvent
+{
+    public Candles candles;
+    public Extingish(Candles candles)
+    {
+        this.candles = candles;
+    }
+}

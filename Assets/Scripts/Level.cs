@@ -53,6 +53,16 @@ public class Level
                     levelObjects.Add(new Barrel(new Vector2Int(x, y), true));
                 }
 
+                if (data.objects[y][x] == 'C')
+                {
+                    levelObjects.Add(new Candles(new Vector2Int(x, y), true));
+                }
+
+                if (data.objects[y][x] == 'U')
+                {
+                    levelObjects.Add(new Candles(new Vector2Int(x, y), false));
+                }
+
                 if (data.player[y][x] == 'P')
                 {
                     playerPos = new Vector2Int(x, y);
@@ -114,6 +124,16 @@ public class Level
                         levelEvents.Add(new BarrelRoll(b, moveInput.dir, b.pos, endPos));
                         b.pos = endPos;
                     }
+                }
+            } else if (possesedObject is Candles c)
+            {
+                if (c.isLit && !IsObstructed(c.pos + moveInput.dir))
+                {
+                    Fire fire = new Fire(c.pos + moveInput.dir);
+                    levelEvents.Add(new FireStart(fire));
+                    levelEvents.Add(new Extingish(c));
+                    levelObjects.Add(fire);
+                    c.isLit = false;
                 }
             }
         } else if (input is PossessInput possessInput)

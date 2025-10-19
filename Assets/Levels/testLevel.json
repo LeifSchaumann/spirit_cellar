@@ -13,13 +13,13 @@
     ],
     "objects": [
         "WWWWWWWWW",
-        "W       W",
+        "WC     CW",
         "W  B  M W",
         "W       W",
         "W M  B  W",
+        "W  MC   W",
         "W  M    W",
-        "W  M    W",
-        "W       W",
+        "WU     UW",
         "WWWWWWWWW"
     ],
     "player": [
@@ -30,7 +30,7 @@
         "W M  B  W",
         "W  P    W",
         "W  M    W",
-        "W       W",
+        "W      UW",
         "WWWWWWWWW"
     ]
 }

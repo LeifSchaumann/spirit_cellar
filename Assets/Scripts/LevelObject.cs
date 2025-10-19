@@ -24,3 +24,22 @@ public class Barrel : Possessable
         this.rollsVertically = rollsVertically;
     }
 }
+
+public class Candles : Possessable
+{
+    public bool isLit;
+
+    public Candles(Vector2Int pos, bool isLit)
+    {
+        this.pos = pos;
+        this.isLit = isLit;
+    }
+}
+
+public class Fire : LevelObject
+{
+    public Fire(Vector2Int pos)
+    {
+        this.pos = pos;
+    }
+}
