@@ -1,0 +1,25 @@
+﻿{
+    "fireRequirement": 1,
+    "walls": [
+        "WWWWWWWWW",
+        "W       W",
+        "W       W",
+        "W       W",
+        "W       W",
+        "W       W",
+        "W       W",
+        "W       W",
+        "WWWWWWWWW"
+    ],
+    "possessables": [
+        "WWWWWWWWW",
+        "W       W",
+        "W  B    W",
+        "W       W",
+        "W    B  W",
+        "W       W",
+        "W       W",
+        "W       W",
+        "WWWWWWWWW"
+    ]
+}
