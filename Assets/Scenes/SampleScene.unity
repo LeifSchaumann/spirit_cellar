@@ -225,7 +225,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 6
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -350,8 +350,10 @@ GameObject:
   m_Component:
   - component: {fileID: 955449566}
   - component: {fileID: 955449565}
+  - component: {fileID: 955449568}
+  - component: {fileID: 955449567}
   m_Layer: 0
-  m_Name: Grid
+  m_Name: Managers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -385,6 +387,35 @@ Transform:
   - {fileID: 1533139714}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &955449567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 955449564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8db0f59263eb0f64bab72e101b99d096, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameManager
+  testLevelFile: {fileID: 4900000, guid: 6761844926fc111459084993cc447067, type: 3}
+--- !u!114 &955449568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 955449564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b87703efd8b58d459087a8f25c51f01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PresentationManager
+  wallTilemap: {fileID: 1533139716}
+  wallTile: {fileID: 11400000, guid: ffa904fce1ede954d97445da520582dd, type: 2}
+  floorTile: {fileID: 11400000, guid: d44ef2b553e3ea049b1e6617d963906f, type: 2}
+  barrelPrefab: {fileID: 4190794661759872000, guid: f50ce98d9df319f4fbdc16a9cad5b63a, type: 3}
 --- !u!1 &1533139713
 GameObject:
   m_ObjectHideFlags: 0
@@ -464,7 +495,7 @@ TilemapRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16

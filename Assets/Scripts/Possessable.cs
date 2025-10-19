@@ -1,16 +1,20 @@
 using UnityEngine;
 
-public class Possessable : MonoBehaviour
+public abstract class Possessable
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    Vector2Int pos;
 
-    // Update is called once per frame
-    void Update()
+    public virtual bool CollidesWith(Vector2Int pos)
     {
-        
+        return this.pos == pos;
+    }
+}
+
+public class Barrel : Possessable
+{
+    public Vector2Int pos;
+    public Barrel(Vector2Int pos)
+    {
+        this.pos = pos;
     }
 }

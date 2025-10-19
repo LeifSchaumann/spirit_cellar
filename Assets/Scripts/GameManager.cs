@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        
+        currentLevel = new Level(testLevelFile);
+        PresentationManager.main.LoadLevel(currentLevel);
     }
 }
