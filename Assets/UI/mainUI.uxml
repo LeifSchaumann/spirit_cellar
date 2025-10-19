@@ -3,7 +3,7 @@
         <ui:Label text="X/3 fires started" name="fire-counter" style="font-size: 20%; color: rgb(186, 48, 0);" />
     </ui:VisualElement>
     <ui:VisualElement name="title-screen" style="flex-grow: 1; align-items: center; display: none;">
-        <ui:Label text="Game Title Here" style="-unity-text-align: upper-center; font-size: 40%; margin-top: 10%; color: rgb(226, 226, 226);" />
+        <ui:Label text="Cellar Arsonist" style="-unity-text-align: upper-center; font-size: 40%; margin-top: 10%; color: rgb(226, 226, 226);" />
         <ui:Button text="Play" name="play-button" style="width: 34%; margin-top: 21%;" />
     </ui:VisualElement>
     <ui:VisualElement name="level-complete-screen" style="flex-grow: 1; align-items: center; display: none;">

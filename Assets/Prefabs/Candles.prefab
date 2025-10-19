@@ -80,7 +80,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1394665571964572526, guid: 5aa80fcabe69de64f9b6fc14414da531, type: 3}
+  m_Sprite: {fileID: -9067032843345256877, guid: 8aa76167c06f96c469e78569729c7c2b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -103,5 +103,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94335610a99bd794fab2b2da9285d89d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CandlesPresenter
-  litSprite: {fileID: -1394665571964572526, guid: 5aa80fcabe69de64f9b6fc14414da531, type: 3}
-  unlitSprite: {fileID: -7812277128739196716, guid: 58f5fcf79599c4849b0c8f2c58d38878, type: 3}
+  litSprite: {fileID: -9067032843345256877, guid: 8aa76167c06f96c469e78569729c7c2b, type: 3}
+  unlitSprite: {fileID: 2798290011037525337, guid: 6b9e0bddf13484b43bc24be071ed58f6, type: 3}
